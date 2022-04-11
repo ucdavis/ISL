@@ -1,8 +1,6 @@
 swiss$CatholicD=ifelse(swiss$Catholic <= 50, "no", "yes")
 swiss
 
-
-
 library(ggplot2)
 
 ggplot(swiss, aes(x=Fertility, y = Agriculture, color=CatholicD)) +geom_point()
@@ -45,6 +43,7 @@ for(i in 1:100){
 
 rownames(knnfield) = x1
 colnames(knnfield) = x2
+knnfield
 dich=ifelse(knnfield>=.5, 1, 0)
 dich
 image( dich )
@@ -57,3 +56,4 @@ for(i in 1:100){
   }
 }
 
+## fix some errors
